@@ -14,7 +14,7 @@
 <body class="bg-light">
     <header class="container-fluid bg-primary text-light text-center">
         <div class="row mt-2">
-            <div class="col-3">
+            <div class="col-md-3 col-12 order-2 order-md-1">
                 <ul class="nav mt-2">
                     <li class="nav-item">
                         <a class="nav-link pointer" onclick="app.carsController.switchCars()">Cars</a>
@@ -27,14 +27,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-5">
+            <div class="col-md-5 col-12 order-1 order-md-2">
                 <h1>Troyslist</h1>
             </div>
         </div>
     </header>
     <main class="container-fluid">
-        <div id="carForm" class="row">
-            <div class="col-5 card mt-3  offset-3 text-center">
+        <div id="carForm" class="row justify-content-center">
+            <div class="col-md-5 col-11 card mt-3 text-center">
                 <form onsubmit="app.carsController.addCar(event)">
                     <div class="form-group">
                         <label for="make"></label>
@@ -56,8 +56,8 @@
 
             </div>
         </div>
-        <div id="jobForm" class="row hidden">
-            <div class="col-5 card mt-3  offset-3 text-center">
+        <div id="jobForm" class="row hidden justify-content-center">
+            <div class="col-md-5 col-11 card mt-3 text-center">
                 <form onsubmit="app.jobsController.addJob(event)">
                     <div class="form-group">
                         <label for=""></label>
@@ -77,8 +77,8 @@
 
             </div>
         </div>
-        <div id="houseForm" class="row hidden">
-            <div class="col-5 card mt-3  offset-3 text-center">
+        <div id="houseForm" class="row hidden justify-content-center">
+            <div class="col-md-5 col-11 card mt-3 text-center">
                 <form onsubmit="app.housesController.addHouse(event)">
                     <div class="form-group">
                         <label for=""></label>
@@ -111,7 +111,7 @@
         </div>
 
     </main>
-    <footer class="container-fluid bg-primary text-light">
+    <footer class="container-fluid bg-primary text-light mt-2">
         <div class="row text-center">
             <div class="col">
                 <p><small>Made by Troy Fuhriman</small></p>

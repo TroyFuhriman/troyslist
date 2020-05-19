@@ -1,16 +1,16 @@
 export default class Job {
-  constructor(data) {
-    this.company = data.company
-    this.jobTitle = data.jobTitle
-    this.hours = data.hours
-    this.rate = data.rate
-    this.description = data.description
-    this.id = data._id
-  }
+    constructor(data) {
+        this.company = data.company
+        this.jobTitle = data.jobTitle
+        this.hours = data.hours
+        this.rate = data.rate
+        this.description = data.description
+        this.id = data._id
+    }
 
-  get Template() {
-    return /*html*/ `
-      <div class="col-2">
+    get Template() {
+        return /*html*/ `
+      <div class="col-md-2 col-6">
       <div class="card mt-3 shadow border-dark">
           <div class="card-top bg-primary text-light text-center">
               <h4> ${this.jobTitle}</h4>
@@ -32,5 +32,5 @@ export default class Job {
           </div>
       </div>
   </div>`
-  }
+    }
 }

@@ -11,7 +11,7 @@ export default class Car {
 
   get Template() {
     return /*html*/ `
-    <div class="col-3">
+    <div class="col-md-3 col-12">
       <div class="card mt-3 shadow border-dark">
           <img class="card-img-top" src="${this.imgUrl}" alt="">
           <div class="card-body">
