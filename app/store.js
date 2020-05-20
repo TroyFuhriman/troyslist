@@ -46,6 +46,9 @@ function _validateSubscriber(fn, prop) {
 }
 
 class Store {
+  constructor() {
+
+  }
   /**
    * Provides access to application state data
    */
